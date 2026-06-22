@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary-50: var(--color-violet-50);
+  --color-primary-100: var(--color-violet-100);
+  --color-primary-200: var(--color-violet-200);
+  --color-primary-300: var(--color-violet-300);
+  --color-primary-400: var(--color-violet-400);
+  --color-primary-500: var(--color-violet-500);
+  --color-primary-600: var(--color-violet-600);
+  --color-primary-700: var(--color-violet-700);
+  --color-primary-800: var(--color-violet-800);
+  --color-primary-900: var(--color-violet-900);
+
+  --color-secondary-50: var(--color-yellow-50);
+  --color-secondary-100: var(--color-yellow-100);
+  --color-secondary-200: var(--color-yellow-200);
+  --color-secondary-300: var(--color-yellow-300);
+  --color-secondary-400: var(--color-yellow-400);
+  --color-secondary-500: var(--color-yellow-500);
+  --color-secondary-600: var(--color-yellow-600);
+  --color-secondary-700: var(--color-yellow-700);
+  --color-secondary-800: var(--color-yellow-800);
+  --color-secondary-900: var(--color-yellow-900);
+
+  /* Landing Page Design System */
+  --color-landing-primary: #534AB7;
+  --color-landing-light: #EEEDFE;
+  --color-landing-medium: #AFA9EC;
+  --color-landing-dark: #26215C;
+  --color-landing-success: #0F6E56;
+
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 262.1 83.3% 57.8%; /* Violet */
+    --primary-foreground: 210 40% 98%;
+    --secondary: 47.9 95.8% 53.1%; /* Yellow */
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 262.1 83.3% 57.8%;
+    --radius: 0.5rem;
+  }
+
+  body {
+    @apply bg-white text-slate-900 antialiased font-sans;
+  }
+}
+
+/* Custom scrollbar for minimalist look */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-200 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-slate-300;
+}
