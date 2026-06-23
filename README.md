@@ -58,11 +58,18 @@ Riwayat laporan per klien
 
 ## Arsitektur Teknis
 
--Backend     : Laravel 11
--Frontend    : React.js + Tailwind CSS
--Grafik      : Chart.js atau ApexCharts
--PDF Export  : Browser print + file system
--AI Insight  : Gemini API
--Database    : MySQL
--Server      : Shared Hosting Hostinger
--Auth        : Laravel Sanctum + JWT
+- Backend     : Laravel 11
+
+- Frontend    : React.js + Tailwind CSS
+
+- Grafik      : Chart.js atau ApexCharts
+
+- PDF Export  : Browser print + file system
+
+- AI Insight  : Gemini API
+
+- Database    : MySQL
+
+- Server      : Shared Hosting Hostinger
+
+- Auth        : Laravel Sanctum + JWT
