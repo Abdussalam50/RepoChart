@@ -1,77 +1,54 @@
 # RepoChart
 
-## 1. Ringkasan Produk
-**RepoChart** adalah SaaS tools berbasis web yang membantu freelancer dan agensi digital marketing Indonesia mengubah data mentah CSV/Excel dari Meta Ads, Google Ads, dan TikTok Ads menjadi laporan klien yang profesional, branded, dan siap kirim dalam waktu kurang dari 5 menit.
+## 1. Product Overview
+**RepoChart** is a web-based SaaS tool that helps digital marketing freelancers and agencies transform raw CSV/Excel data from Meta Ads, Google Ads, and TikTok Ads into professional, branded, and ready-to-send client reports in less than 5 minutes.
 
-## Masalah yang Diselesaikan
-Freelancer digital marketing wajib membuat laporan bulanan untuk setiap klien. Saat ini mereka melakukannya secara manual: export CSV dari platform ads, copy-paste ke Google Slides atau Canva, tambahkan grafik satu per satu, lalu kirim ke klien. Proses ini memakan 2-4 jam per klien per bulan.
+## Problem Solved
+Digital marketing freelancers are required to create monthly reports for each client. Currently, they do this manually: export CSV from ad platforms, copy-paste to Google Slides or Canva, add charts one by one, and then send it to the client. This process takes 2-4 hours per client per month.
 
-## Solusi
-Upload CSV → sistem parsing otomatis → pilih grafik → tambah branding klien → export PDF branded selesai dalam 5 menit.
+## Solution
+Upload CSV → automated parsing system → select charts → add client branding → export branded PDF — done in 5 minutes.
 
-## List Fitur
+## Feature List
 
-## 1 Manajemen Klien
-Tambah, edit, arsip klien
+## 1. Client Management
+- Add, edit, archive clients
+- Store client profile: name, logo, brand color (hex)
+- Report history per client
 
-Simpan profil klien: nama, logo, warna brand (hex)
+## 2. Data Upload & Parsing
+- Upload CSV and Excel (.xlsx) files
+- Auto-detect columns and data types (number / text / date)
+- Data preview before processing
+- Support export formats from: Meta Ads, Google Ads, TikTok Ads
 
-Riwayat laporan per klien
+## 3. Chart Configuration
+- Select chart type: Bar, Line, Pie, Donut
+- Select X-axis (label) and Y-axis (value) from detected columns
+- Date range filter
+- Selection of KPI metrics to be displayed
 
-## 2 Upload & Parsing Data
-- Upload file CSV dan Excel (.xlsx)
+## 4. Report Generation
+- Automated KPIs: total, average, delta % vs previous period
+- Charts with client brand colors
+- Automated insights (AI-generated) (premium feature)
+- Actionable recommendations for the next month (premium feature)
 
-- Auto-deteksi kolom dan tipe data (angka / teks / tanggal)
+## 5. Branding & Export
+- Upload client logo
+- Select client brand color (color picker)
+- Neat and professional A4 report template
+- 1-click PDF export
+- Share report link to client via WhatsApp
 
-- Preview data sebelum diproses
-
-- Support format export dari: Meta Ads, Google Ads, TikTok Ads
-
-## 3 Konfigurasi Grafik
-- Pilih tipe grafik: Bar, Line, Pie, Donut
-
-- Pilih sumbu X (label) dan sumbu Y (nilai) dari kolom yang terdeteksi
-
-- Filter rentang tanggal
-
-- Pemilihan metrik KPI yang akan ditampilkan
-
-## 4 Generate Laporan
-- KPI otomatis: total, rata-rata, delta % vs periode sebelumnya
-
-- Grafik dengan branding warna klien
-
-- Insight otomatis (AI-generated, Bahasa Indonesia) (fitur premium)
-
-- Rekomendasi actionable untuk bulan berikutnya (fitur premium)
-
-## 5 Branding & Export
-- Upload logo klien
-
-- Pilih warna brand klien (color picker)
-
-- Template laporan A4 yang rapi dan profesional
-
-- Export PDF 1 klik
-
-- Share link laporan ke client via whatsapp
-
-## Arsitektur Teknis
+## Technical Architecture
 
 - Backend     : Laravel 11
-
 - Frontend    : React.js + Tailwind CSS
-
-- RESTAPI     : Library Axios
-
-- Grafik      : Chart.js atau ApexCharts
-
+- REST API    : Axios Library
+- Charts      : Chart.js or ApexCharts
 - PDF Export  : Browser print + file system
-
 - AI Insight  : Gemini API
-
 - Database    : MySQL
-
-- Server      : Shared Hosting Hostinger
-
+- Server      : Hostinger Shared Hosting
 - Auth        : Laravel Sanctum + JWT
