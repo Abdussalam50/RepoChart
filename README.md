@@ -62,6 +62,8 @@ Riwayat laporan per klien
 
 - Frontend    : React.js + Tailwind CSS
 
+- RESTAPI     : Library Axios
+
 - Grafik      : Chart.js atau ApexCharts
 
 - PDF Export  : Browser print + file system
